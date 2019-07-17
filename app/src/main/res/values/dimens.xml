@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_item_start_margin">12dp</dimen>
+    <dimen name="profile_name_margin_top">10dp</dimen>
+    <dimen name="order_page_title_padding_horizontal">24dp</dimen>
+    <dimen name="order_page_title_padding_vertical">16dp</dimen>
+    <dimen name="order_filter_container_margin_top">24dp</dimen>
+    <dimen name="order_filter_container_padding_horizontal">14dp</dimen>
+    <dimen name="order_filter_container_padding_vertical">18dp</dimen>
+    <dimen name="area_filter_margin_start">40dp</dimen>
+    <dimen name="orders_filter_padding_horizontal">24dp</dimen>
+    <dimen name="orders_filter_padding_vertical">18dp</dimen>
+    <dimen name="flex_margin_horizontal">40dp</dimen>
+    <dimen name="filter_container_padding">24dp</dimen>
+    <dimen name="service_booked_on_data_margin_start">10dp</dimen>
+    <dimen name="service_booked_on_date_label_margin_top">10dp</dimen>
+    <dimen name="dashed_line_margin_vertical">20dp</dimen>
+    <dimen name="order_item_start_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/orderContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="14dp"
+            android:background="@color/white"
+            android:padding="16dp" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceBookedOnDateLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceBookedOnDateLabel"
+                android:text="Service Booked on"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceStartedAtTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceBookedOnDateLabel"
+                android:text="Servicing started at"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceBookedOnDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/serviceBookedOnDateLabelTv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/service_booked_on_date_label_margin_top"
+                style="@style/TextAppearance.ServiceBookedOnDateTv"
+                android:text="05-MAR-19 10:00 AM"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceStartedOnDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/serviceStartedAtTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/service_booked_on_date_label_margin_top"
+                style="@style/TextAppearance.ServiceBookedOnDateTv"
+                android:text="05-MAR-19 10:00 AM"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dashedLineIv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/serviceStartedOnDateTv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/dashed_line_margin_vertical"
+                android:background="@drawable/dashed_horizontal_line"
+                android:layerType="software"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceCenterNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dashedLineIv"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceCenterNameInAccountStyle"
+                android:text="Varun motors"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/serviceCenterAddressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/serviceCenterNameTv"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceCenterAddressInAccountStyle"
+                android:text="HSR Layout"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vehicleInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/serviceCenterAddressTv"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                style="@style/TextAppearance.VehicleInfoInOrder"
+                android:drawableStart="@drawable/ic_sedan_car_svg"
+                android:drawablePadding="4dp"
+                android:text="KA 12 AP 1234"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/customerDetailsLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dashedLineIv"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceBookedOnDateLabel"
+                android:text="Customer Details"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/customerNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/customerDetailsLabelTv"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/ico_call_svg"
+                android:drawablePadding="20dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                style="@style/TextAppearance.ServiceBookedOnDateLabel"
+                android:text="Jayanth"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/customerAddressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/customerNameTv"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.ServiceBookedOnDateLabel"
+                android:text="HSR Layout 560045"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dashedLineIv1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/vehicleInfoTv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/dashed_line_margin_vertical"
+                android:background="@drawable/dashed_horizontal_line"
+                android:layerType="software"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/representativeProfileIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_support"
+                app:layout_constraintTop_toBottomOf="@id/dashedLineIv1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/dashed_line_margin_vertical"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/representativeNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/representativeProfileIv"
+                app:layout_constraintStart_toEndOf="@id/representativeProfileIv"
+                android:layout_marginStart="20dp"
+                android:text="Rahul"
+                style="@style/TextAppearance.RepresentativeName"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/representativeIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/representativeNameTv"
+                app:layout_constraintStart_toEndOf="@id/representativeProfileIv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:text="PTEX0012"
+                style="@style/TextAppearance.RepresentativeName"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/callIv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toEndOf="@id/representativeIdTv"
+                app:layout_constraintTop_toTopOf="@id/representativeNameTv"
+                app:layout_constraintBottom_toBottomOf="@id/representativeIdTv"
+                app:srcCompat="@drawable/ico_call_svg"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_bg"
+                android:clickable="true"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewCartBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.OrderStatus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/representativeProfileIv"
+                app:layout_constraintBottom_toBottomOf="@id/representativeProfileIv"
+                android:text="@string/order_status"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/jobIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Job Id 21816"
+            style="@style/TextAppearance.OrderIdTitle"
+            android:padding="6dp"
+            android:background="@color/gray_250"
+            android:elevation="6dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

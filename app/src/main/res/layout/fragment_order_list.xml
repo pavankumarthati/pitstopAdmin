@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_250"
+    android:orientation="vertical"
+    tools:context=".OrderListFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/order_page_title_padding_horizontal"
+        android:paddingEnd="@dimen/order_page_title_padding_horizontal"
+        android:paddingTop="@dimen/order_page_title_padding_vertical"
+        android:paddingBottom="@dimen/order_page_title_padding_vertical"
+        android:text="@string/orders_page_title"
+        style="@style/TextAppearance.OrderPageTitle"
+        android:background="@color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="28dp"
+        android:padding="@dimen/filter_container_padding"
+        >
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/cityFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:entries="@array/country_arrays"
+            android:background="@drawable/spinner_with_round_corner"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/areaFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:entries="@array/country_arrays"
+            android:layout_marginStart="@dimen/flex_margin_horizontal"
+            android:layout_toEndOf="@id/cityFilter"
+            android:background="@drawable/spinner_with_round_corner"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/serviceCenterFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:entries="@array/country_arrays"
+            android:layout_marginStart="@dimen/flex_margin_horizontal"
+            android:layout_toEndOf="@id/areaFilter"
+            android:background="@drawable/spinner_with_round_corner"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/orderIdFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:minHeight="10dp"
+            style="@style/TextAppearance.SearchEtStyle"
+            android:hint="@string/order_id_search_hint"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:layout_below="@id/serviceCenterFilter"
+            android:layout_marginTop="28dp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customerIdFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            style="@style/TextAppearance.SearchEtStyle"
+            android:layout_marginStart="@dimen/flex_margin_horizontal"
+            android:layout_toEndOf="@id/orderIdFilter"
+            android:hint="@string/customer_id_search_hint"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:layout_below="@id/serviceCenterFilter"
+            android:layout_marginTop="28dp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/EmpIdFilter"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            style="@style/TextAppearance.SearchEtStyle"
+            android:hint="@string/emp_id_search_hint"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/flex_margin_horizontal"
+            android:layout_toEndOf="@id/customerIdFilter"
+            android:layout_below="@id/serviceCenterFilter"
+            android:layout_marginTop="28dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/searchBtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            style="@style/Widget.SearchFilters"
+            android:layout_marginStart="@dimen/flex_margin_horizontal"
+            android:layout_toEndOf="@id/EmpIdFilter"
+            android:layout_below="@id/serviceCenterFilter"
+            android:layout_marginTop="28dp"
+            android:text="@string/search_filters"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ordersRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
