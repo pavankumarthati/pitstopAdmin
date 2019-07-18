@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_orders" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_service_centers"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/menu_service_centers" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_employees"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_employees" />
         <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"

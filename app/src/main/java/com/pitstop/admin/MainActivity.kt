@@ -1,15 +1,9 @@
 package com.pitstop.admin
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.core.view.GravityCompat
-import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
-import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -46,10 +40,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_home -> {
                 supportFragmentManager.beginTransaction().add(R.id.content_main ,OrderListFragment()).commit()
             }
-            R.id.nav_gallery -> {
-
+            R.id.nav_service_centers -> {
+                supportFragmentManager.beginTransaction().add(R.id.content_main ,ServiceCentersFragment()).commit()
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_employees -> {
 
             }
             R.id.nav_tools -> {

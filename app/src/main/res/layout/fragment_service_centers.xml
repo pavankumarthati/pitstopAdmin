@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serviceCenterTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/service_centers_page_title"
+        style="@style/TextAppearance.ServiceCentersTitle"
+        android:background="@color/white"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/serviceCenterTitleTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:padding="48dp"
+        android:background="@color/white" >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/serviceCenterFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.SearchEtStyle"
+            android:padding="18dp"
+            android:hint="@string/service_center_search_hint"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AddServiceCenters"
+            app:layout_constraintStart_toEndOf="@id/serviceCenterFilter"
+            app:layout_constraintTop_toTopOf="@id/serviceCenterFilter"
+            app:layout_constraintBottom_toBottomOf="@id/serviceCenterFilter"
+            android:layout_marginStart="@dimen/add_btn_margin_start"
+            android:text="@string/add_service_center"
+            />
+
+        <include android:id="@+id/serviceCenterHeaderItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/service_center_header_item"
+            app:layout_constraintTop_toBottomOf="@id/addBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serviceCentersRv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/serviceCenterHeaderItem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

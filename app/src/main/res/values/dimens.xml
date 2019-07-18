@@ -21,4 +21,6 @@
     <dimen name="service_booked_on_date_label_margin_top">10dp</dimen>
     <dimen name="dashed_line_margin_vertical">20dp</dimen>
     <dimen name="order_item_start_margin">10dp</dimen>
+    <dimen name="add_btn_margin_start">24dp</dimen>
+    <dimen name="recyclerview_divider_line_padding_horizontal">10dp</dimen>
 </resources>

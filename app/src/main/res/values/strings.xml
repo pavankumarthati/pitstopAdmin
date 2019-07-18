@@ -7,9 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_service_centers">Service Centers</string>
+    <string name="menu_employees">Employees</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
@@ -23,6 +23,14 @@
     <string name="emp_id_search_hint">Emp Id</string>
     <string name="search_filters">SEARCH</string>
     <string name="order_status">Ongoing</string>
+    <string name="service_centers_page_title">Service Centers</string>
+    <string name="service_center_search_hint">Search Service center</string>
+    <string name="add_service_center">Add Service Center</string>
+    <string name="name_title">Name</string>
+    <string name="cars_in_service_title">In Service</string>
+    <string name="cars_delivered_title">Delivered</string>
+    <string name="services_scheduled_title">Scheduled</string>
+    <string name="action_title">Action</string>
 
     <string-array name="country_arrays">
         <item>Malaysia</item>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".28"
+        android:text="@string/name_title"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/carsInServiceTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".18"
+        android:text="@string/cars_in_service_title"
+        android:gravity="center"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/carsDeliveredTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".18"
+        android:text="@string/cars_delivered_title"
+        android:gravity="center"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/servicesScheduledTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".18"
+        android:text="@string/services_scheduled_title"
+        android:gravity="center"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actionTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".18"
+        android:text="@string/action_title"
+        android:gravity="center"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
+
+</LinearLayout>
