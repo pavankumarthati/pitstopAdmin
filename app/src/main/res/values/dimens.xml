@@ -23,4 +23,6 @@
     <dimen name="order_item_start_margin">10dp</dimen>
     <dimen name="add_btn_margin_start">24dp</dimen>
     <dimen name="recyclerview_divider_line_padding_horizontal">10dp</dimen>
+    <dimen name="inclusions_rv_padding">10dp</dimen>
+    <dimen name="inclusions_rv_padding_horizontal">10dp</dimen>
 </resources>

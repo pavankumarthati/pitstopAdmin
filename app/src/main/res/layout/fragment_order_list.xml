@@ -47,7 +47,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/serviceCenterFilter"
+            android:id="@+id/employeeFilter"
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:entries="@array/country_arrays"
@@ -66,7 +66,7 @@
             android:hint="@string/order_id_search_hint"
             android:background="@drawable/round_corner"
             android:gravity="center_vertical"
-            android:layout_below="@id/serviceCenterFilter"
+            android:layout_below="@id/employeeFilter"
             android:layout_marginTop="28dp"
             />
 
@@ -81,7 +81,7 @@
             android:hint="@string/customer_id_search_hint"
             android:background="@drawable/round_corner"
             android:gravity="center_vertical"
-            android:layout_below="@id/serviceCenterFilter"
+            android:layout_below="@id/employeeFilter"
             android:layout_marginTop="28dp"
 
             />
@@ -96,7 +96,7 @@
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/flex_margin_horizontal"
             android:layout_toEndOf="@id/customerIdFilter"
-            android:layout_below="@id/serviceCenterFilter"
+            android:layout_below="@id/employeeFilter"
             android:layout_marginTop="28dp"
             />
 
@@ -107,7 +107,7 @@
             style="@style/Widget.SearchFilters"
             android:layout_marginStart="@dimen/flex_margin_horizontal"
             android:layout_toEndOf="@id/EmpIdFilter"
-            android:layout_below="@id/serviceCenterFilter"
+            android:layout_below="@id/employeeFilter"
             android:layout_marginTop="28dp"
             android:text="@string/search_filters"
             />
@@ -118,8 +118,21 @@
         android:id="@+id/ordersRv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:clipToPadding="false"
-        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noResultsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        style="@style/TextAppearance.NoResults"
+        android:gravity="center"
+        android:text="@string/no_results"
+        android:visibility="gone"
+        />
 
 </LinearLayout>

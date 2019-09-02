@@ -9,19 +9,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".28"
-        android:text="Varun Motors HSR layout3rwerwrwedfdfsdfdfdrsdfsdf"
-        android:maxLines="1"
-        android:ellipsize="end"
-        style="@style/TextAppearance.ServiceCenterItem" />
+        android:text="@string/name_title"
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/jobsAssignedTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
-        android:text="10"
+        android:text="@string/jobs_assigned"
         android:gravity="center"
-        style="@style/TextAppearance.ServiceCenterItem" />
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -29,18 +27,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
-        android:text="2"
+        android:text="@string/jobs_completed"
         android:gravity="center"
-        style="@style/TextAppearance.ServiceCenterItem" />
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/jobsPendingTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
-        android:text="10"
+        android:text="@string/jobs_pending"
         android:gravity="center"
-        style="@style/TextAppearance.ServiceCenterItem" />
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -48,8 +46,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
-        android:text="12"
+        android:text="@string/remarks"
         android:gravity="center"
-        style="@style/TextAppearance.ServiceCenterItem" />
+        style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
 </LinearLayout>

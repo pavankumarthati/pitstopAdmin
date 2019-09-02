@@ -57,7 +57,7 @@ class OrderListFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_order_list, container, false)
         cityFilterSpinner = rootView.cityFilter
         areaFilterSpinner = rootView.areaFilter
-        serviceCenterFilter = rootView.serviceCenterFilter
+        serviceCenterFilter = rootView.employeeFilter
         ordersRv = rootView.ordersRv
         return rootView
     }

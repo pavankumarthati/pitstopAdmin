@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serviceBookedOnDateLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/service_booked_on_date_label_margin_top"
+        style="@style/TextAppearance.ServiceBookedOnDateLabel"
+        android:text="Service Booked on"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serviceBookedOnDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/serviceBookedOnDateLabelTv"
+        android:layout_marginStart="@dimen/service_booked_on_data_margin_start"
+        android:layout_marginTop="@dimen/service_booked_on_date_label_margin_top"
+        style="@style/TextAppearance.ServiceBookedOnDateTv"
+        tools:text="05-MAR-19 10:00 AM"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dashedLineIv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/serviceBookedOnDateLabelTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dashed_line_margin_vertical"
+        android:layout_marginBottom="@dimen/dashed_line_margin_vertical"
+        android:background="@drawable/dashed_horizontal_line"
+        android:layerType="software"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serviceCenterNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashedLineIv"
+        android:layout_marginTop="10dp"
+        style="@style/TextAppearance.ServiceCenterNameInAccountStyle"
+        tools:text="Varun motors"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serviceCenterAddressTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceCenterNameTv"
+        android:layout_marginTop="4dp"
+        style="@style/TextAppearance.ServiceCenterAddressInAccountStyle"
+        tools:text="HSR Layout"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vehicleInfoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceCenterAddressTv"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        style="@style/TextAppearance.VehicleInfoInOrder"
+        android:drawableStart="@drawable/ic_local_car_wash_black_24dp"
+        android:drawablePadding="4dp"
+        tools:text="HSR Layout"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dashedLineOneIv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/vehicleInfoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dashed_line_margin_vertical"
+        android:layout_marginBottom="@dimen/dashed_line_margin_vertical"
+        android:background="@drawable/dashed_horizontal_line"
+        android:layerType="software"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/executeNameLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/executeNameTv"
+        app:layout_constraintBottom_toBottomOf="@+id/executeNameTv"
+        style="@style/TextAppearance.ServiceBookedOnDateTv"
+        android:text="@string/executive_name_label"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/executeNameTv"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/executeNameLabelTv"
+        app:layout_constraintTop_toBottomOf="@id/dashedLineOneIv"
+        android:layout_marginStart="@dimen/service_booked_on_data_margin_start"
+        android:layout_marginEnd="@dimen/service_booked_on_data_margin_start"
+        android:layout_marginTop="@dimen/service_booked_on_date_label_margin_top"
+        android:background="@drawable/spinner_with_round_corner"
+        style="@style/TextAppearance.ExecutiveSpinner"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/driverLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/driverNameTv"
+        app:layout_constraintBottom_toBottomOf="@+id/driverNameTv"
+        style="@style/TextAppearance.ServiceBookedOnDateTv"
+        android:text="@string/driver_label"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/driverNameTv"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/driverLabelTv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/executeNameTv"
+        android:layout_marginStart="@dimen/service_booked_on_data_margin_start"
+        android:layout_marginEnd="@dimen/service_booked_on_data_margin_start"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_with_round_corner"
+        style="@style/TextAppearance.ExecutiveSpinner"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.SubmitOrderDetailAmdin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/submit_order_detail_admin"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

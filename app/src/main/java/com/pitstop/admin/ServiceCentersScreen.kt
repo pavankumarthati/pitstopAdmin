@@ -25,7 +25,7 @@ class ServiceCentersFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_service_centers, container, false)
-        serviceCentersRv = rootView.serviceCentersRv
+        serviceCentersRv = rootView.employeesRv
         return rootView
     }
 

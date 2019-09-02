@@ -13,7 +13,7 @@
         style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/carsInServiceTv"
+        android:id="@+id/jobsAssignedTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
@@ -23,7 +23,7 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/carsDeliveredTv"
+        android:id="@+id/jobsCompletedTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
@@ -32,7 +32,7 @@
         style="@style/TextAppearance.ServiceCenterHeaderItem" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/servicesScheduledTv"
+        android:id="@+id/jobsPendingTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"
@@ -42,7 +42,7 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/actionTv"
+        android:id="@+id/remarksTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".18"

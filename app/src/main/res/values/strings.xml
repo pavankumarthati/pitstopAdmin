@@ -31,8 +31,26 @@
     <string name="cars_delivered_title">Delivered</string>
     <string name="services_scheduled_title">Scheduled</string>
     <string name="action_title">Action</string>
+    <string name="no_results">No Results found</string>
+    <string name="executive_name_label">Executive name</string>
+    <string name="driver_label">Driver name</string>
+    <string name="submit_order_detail_admin">Submit</string>
+    <string name="add_packages_title">Add Packages</string>
+    <string name="add_package_name_hint">Package Name</string>
+    <string name="price_hint">Price</string>
+    <string name="discounted_price_hint">Discounted Price</string>
+    <string name="add_inclusion">Add Inclusion</string>
+    <string name="add_package">Add Package</string>
+    <string name="employees_page_title">Employees</string>
+    <string name="search_employees">Search Employee</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="jobs_assigned">jobs Assigned</string>
+    <string name="jobs_completed">Jobs Completed</string>
+    <string name="jobs_pending">Jobs Pending</string>
+    <string name="remarks">Remarks</string>
 
     <string-array name="country_arrays">
+        <item>City</item>
         <item>Malaysia</item>
         <item>United States</item>
         <item>Indonesia</item>
