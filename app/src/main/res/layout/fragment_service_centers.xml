@@ -18,7 +18,8 @@
         android:text="@string/service_centers_page_title"
         style="@style/TextAppearance.ServiceCentersTitle"
         android:background="@color/white"
-        />
+    />
+
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,7 +49,7 @@
             />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/addBtn"
+            android:id="@+id/serviceCentersBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Widget.AddServiceCenters"
@@ -63,7 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             layout="@layout/service_center_header_item"
-            app:layout_constraintTop_toBottomOf="@id/addBtn"
+            app:layout_constraintTop_toBottomOf="@id/serviceCentersBtn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="40dp"
@@ -94,5 +95,18 @@
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader_layout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

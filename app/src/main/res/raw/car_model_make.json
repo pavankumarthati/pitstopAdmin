@@ -1,0 +1,21 @@
+[
+  {
+    "id": "A0023", "make": "Maruti", "models": ["800-Petrol","Alto-Petrol","Omni-Petrol","Alto K10-Petrol","Wagon R-Petrol","Estilo-Petrol"]
+  },
+  {
+    "id": "A0024", "make": "Hyundai", "models": ["Getz-Petrol","Eon-Petrol","Santro-Petrol","i10-Petrol","Grand i10-Diesel","Grand i10-Petrol","i20-Diesel","i20-Petrol","Getz-Diesel"]
+  },
+  {
+    "id": "A0025", "make": "Honda", "models": ["Jazz-Diesel","Brio-Petrol","Jazz-Petrol","AMAZE-Petrol","AMAZE-Diesel","CITY-Diesel","CITY-Petrol","Civic-Petrol"]
+  },
+  {
+    "id": "A0026", "make": "Toyota", "models": ["Camry","Etios-Petrol","Etios-Diesel","Corolla-Petrol","Altis-Petrol","Altis-Diesel","Innova-Diesel","Fortuner-Diesel","Etios Cross Diesel","Etios Cross Petrol","Innova Petrol"]
+  },
+  {
+    "id": "A0027", "make": "Mahindra", "models": ["Tuv 300","Thar-Diesel","Bolero-Diesel","Quanto-Diesel","Xylo - Diesel","Scorpio-Diesel","XUV500 - Diesel","Scorpio Getaway Diesel","Verito Diesel","Verito Petrol","Verito Vibe Diesel","Verito Vibe Petrol","KUV 100 Diesel"]
+  },
+  {
+    "id": "A0029", "make": "Tata", "models": ["Indica"]
+  }
+]
+

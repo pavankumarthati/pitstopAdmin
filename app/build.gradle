@@ -6,6 +6,10 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'androidx.navigation.safeargs'
 apply plugin: 'kotlin-kapt'
 
+androidExtensions {
+    experimental = true
+}
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -17,6 +21,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+            useProguard false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -50,7 +58,6 @@ dependencies {
     //Retrofit2
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit2Version"
     implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit2Version"
-    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$versions.retrofitCoroutinesAdapter"
 
     //Okhttp3
     implementation "com.squareup.okhttp3:okhttp:$versions.okhttp3Version"
@@ -59,6 +66,25 @@ dependencies {
     // RxJava2
     implementation "io.reactivex.rxjava2:rxjava:2.1.9"
     implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+
+    // permission coroutines
+    implementation 'com.markodevcic.peko:peko:2.0.0'
+
+    // country code and phone number validation library
+    implementation 'com.hbb20:ccp:2.3.2'
+
+    // material dialogs
+    implementation 'com.afollestad.material-dialogs:core:3.1.1'
+
+    // images library
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    kapt "com.github.bumptech.glide:compiler:4.9.0"
+
+    // play services
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+    implementation 'com.google.maps:google-maps-services:0.1.20'
+
     // RxBindig
     implementation "com.jakewharton.rxbinding2:rxbinding:2.0.0"
     implementation "com.jakewharton.rxbinding2:rxbinding-kotlin:2.0.0"
@@ -72,6 +98,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espresso"
+
 
     //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 

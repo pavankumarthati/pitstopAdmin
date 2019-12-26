@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CarModelChooserScreenFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/carModelRv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="56dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clipToPadding="true"
+            android:overScrollMode="never">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/carModelSearchEt"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/carModelRv"
+            android:layout_margin="5dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:hint="Car Model"
+            style="@style/TextAppearance.CarModel.SearchEtStyle"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableTint="@color/gray_500"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

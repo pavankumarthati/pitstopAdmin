@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:src="@drawable/placeholder"
+    tools:scaleType="centerInside"
+    android:background="@color/transparent">
+
+</androidx.appcompat.widget.AppCompatImageView>

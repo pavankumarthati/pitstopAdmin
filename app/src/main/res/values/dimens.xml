@@ -25,4 +25,20 @@
     <dimen name="recyclerview_divider_line_padding_horizontal">10dp</dimen>
     <dimen name="inclusions_rv_padding">10dp</dimen>
     <dimen name="inclusions_rv_padding_horizontal">10dp</dimen>
+    <dimen name="item_space">10dp</dimen>
+    <dimen name="car_model_selection_rv_height">240dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="tv_vsmall">10sp</dimen>
+    <dimen name="tv_small">12sp</dimen>
+    <dimen name="tv_xsmall">14sp</dimen>
+    <dimen name="tv_medium">16sp</dimen>
+    <dimen name="tv_label">18sp</dimen>
+    <dimen name="tv_large">20sp</dimen>
+    <dimen name="tv_xlarge">24sp</dimen>
+    <dimen name="tv_xxlarge">28sp</dimen>
+    <dimen name="tv_xxxlarge">42sp</dimen>
+    <dimen name="tv_xxxxlarge">48sp</dimen>
+    <dimen name="otp_view_margin">4dp</dimen>
+    <dimen name="md_cornder_radius">6dp</dimen>
 </resources>

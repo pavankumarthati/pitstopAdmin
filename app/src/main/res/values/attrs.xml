@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OtpView">
+        <attr name="ems" format="integer"/>
+        <attr name="childTextStyle" format="reference" />
+        <attr name="childMarginAround" format="dimension"/>
+        <attr name="childMarginBetween" format="dimension"/>
+        <attr name="familySize" format="integer"/>
+        <attr name="childBackground" format="color"/>
+        <attr name="childInputType" format="string" />
+    </declare-styleable>
+</resources>

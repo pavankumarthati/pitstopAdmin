@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment android:id="@+id/HomeFragment"
+        android:name="com.noonbasket.consumerapp.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment android:id="@+id/cartFragment"
+        android:name="com.noonbasket.consumerapp.cart.CartFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment android:id="@+id/ordersFragment"
+        android:name="com.noonbasket.consumerapp.home.OrdersFragment"
+        tools:layout="@layout/fragment_orders"
+        >
+        <action
+            android:id="@+id/action_ordersFragment_pop_including_cartFragment2"
+            app:popUpTo="@+id/cartFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment android:id="@+id/storeHomeFragment"
+        android:name="com.noonbasket.consumerapp.home.StoreHomeFragment"
+        tools:layout="@layout/fragment_store_home">
+    </fragment>
+
+    <fragment android:id="@+id/productItemListFragment"
+        android:name="com.noonbasket.consumerapp.home.PLPFragment"
+        tools:layout="@layout/fragment_product_item_list"
+        />
+
+    <fragment android:id="@+id/PLPSortFragment"
+        android:name="com.noonbasket.consumerapp.home.PLPSortFragment"
+        tools:layout="@layout/fragment_product_list_sort"
+        />
+
+    <fragment android:id="@+id/CategoryFilterFragment"
+        android:name="com.noonbasket.consumerapp.home.CategoryFilterFragment"
+        tools:layout="@layout/fragment_category_filter_list"
+        />
+
+    <fragment android:id="@+id/BrandFilterFragment"
+        android:name="com.noonbasket.consumerapp.home.BrandFilterFragment"
+        tools:layout="@layout/fragment_brand_filter_list"
+        />
+
+    <fragment android:id="@+id/PLPFilterFragment"
+        android:name="com.noonbasket.consumerapp.home.PLPFilterFragment"
+        tools:layout="@layout/fragment_product_list_filter"
+        />
+
+    <fragment android:id="@+id/storeListFragment"
+        android:name="com.noonbasket.consumerapp.home.StoreListFragment"
+        tools:layout="@layout/fragment_store_list"
+        />
+
+    <fragment android:id="@+id/pdpFragment"
+        android:name="com.noonbasket.consumerapp.home.PdpFragment"
+        tools:layout="@layout/fragment_pdp_screen"
+        />
+
+    <fragment android:id="@+id/paymentParentFragment"
+        android:name="com.noonbasket.consumerapp.home.PaymentParentFragment"
+        tools:layout="@layout/fragment_chekout_options" />
+
+    <fragment android:id="@+id/editProfileFragment"
+        android:name="com.noonbasket.consumerapp.home.EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment android:id="@+id/paymentWebviewFragment"
+        android:name="com.noonbasket.consumerapp.home.PaymentWebViewFragment"
+        tools:layout="@layout/fragment_payment_view" />
+
+    <fragment android:id="@+id/OrderSuccessFragment"
+        android:name="com.noonbasket.consumerapp.home.OrderSuccessFragment"
+        tools:layout="@layout/order_sucess_page" />
+
+    <fragment android:id="@+id/AccountOnboardingFragment"
+        android:name="com.noonbasket.consumerapp.home.AccountOnboardingFragment"
+        tools:layout="@layout/fragment_accounts" />
+
+    <fragment android:id="@+id/MyAddressesParentFragment"
+        android:name="com.noonbasket.consumerapp.home.MyAddressesParentFragment"
+        tools:layout="@layout/fragment_my_addresses_parent" />
+
+    <fragment android:id="@+id/OrderDetailFragment"
+        android:name="com.noonbasket.consumerapp.home.OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail" />
+
+    <fragment android:id="@+id/TrackOrderFragment"
+        android:name="com.noonbasket.consumerapp.home.TrackOrderFragment"
+        tools:layout="@layout/fragment_track_order" />
+
+    <fragment android:id="@+id/productCategoryFragment"
+        android:name="com.noonbasket.consumerapp.home.ProductCategoryFragment"
+        tools:layout="@layout/fragment_product_categories" />
+
+    <fragment android:id="@+id/invoiceWebViewFragment"
+        android:name="com.noonbasket.consumerapp.home.InvoiceWebViewFragment"
+        tools:layout="@layout/fragment_invoice_view" />
+
+</navigation>

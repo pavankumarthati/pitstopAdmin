@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderContainer"
+        android:layout_width="220dp"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packageNameTv"
+            style="@style/TextAppearance.ServiceCenterNameInAccountStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Premium Package"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packageSalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/packageNameTv"
+            android:layout_marginTop="6dp"
+            style="@style/TextAppearance.ServiceCenterAddressInAccountStyle"
+            android:text="\u20B9 1,999"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packageOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/packageSalePrice"
+            android:layout_marginTop="4dp"
+            style="@style/TextAppearance.ServiceCenterAddressInAccountStyle"
+            android:text="\u20B9 3,999"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/inclusionsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/packageOriginalPrice"
+            android:layout_marginTop="10dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:drawablePadding="4dp"
+            android:text="inclusion1, inclusion2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

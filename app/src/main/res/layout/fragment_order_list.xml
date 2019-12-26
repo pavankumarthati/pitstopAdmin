@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray_250"
     android:orientation="vertical"
     tools:context=".OrderListFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/pageTitle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:paddingStart="@dimen/order_page_title_padding_horizontal"
         android:paddingEnd="@dimen/order_page_title_padding_horizontal"
         android:paddingTop="@dimen/order_page_title_padding_vertical"
@@ -22,8 +25,12 @@
         />
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:id="@+id/filterRellayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
         android:background="@color/white"
         android:layout_marginTop="28dp"
         android:padding="@dimen/filter_container_padding"
@@ -33,26 +40,16 @@
             android:id="@+id/cityFilter"
             android:layout_width="160dp"
             android:layout_height="40dp"
-            android:entries="@array/country_arrays"
+            tools:entries="@array/areas"
             android:background="@drawable/spinner_with_round_corner"/>
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/areaFilter"
             android:layout_width="160dp"
             android:layout_height="40dp"
-            android:entries="@array/country_arrays"
+            android:entries="@array/areas"
             android:layout_marginStart="@dimen/flex_margin_horizontal"
             android:layout_toEndOf="@id/cityFilter"
-            android:background="@drawable/spinner_with_round_corner"
-            />
-
-        <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/employeeFilter"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:entries="@array/country_arrays"
-            android:layout_marginStart="@dimen/flex_margin_horizontal"
-            android:layout_toEndOf="@id/areaFilter"
             android:background="@drawable/spinner_with_round_corner"
             />
 
@@ -66,7 +63,7 @@
             android:hint="@string/order_id_search_hint"
             android:background="@drawable/round_corner"
             android:gravity="center_vertical"
-            android:layout_below="@id/employeeFilter"
+            android:layout_below="@id/areaFilter"
             android:layout_marginTop="28dp"
             />
 
@@ -81,7 +78,7 @@
             android:hint="@string/customer_id_search_hint"
             android:background="@drawable/round_corner"
             android:gravity="center_vertical"
-            android:layout_below="@id/employeeFilter"
+            android:layout_below="@id/areaFilter"
             android:layout_marginTop="28dp"
 
             />
@@ -96,7 +93,7 @@
             android:gravity="center_vertical"
             android:layout_marginStart="@dimen/flex_margin_horizontal"
             android:layout_toEndOf="@id/customerIdFilter"
-            android:layout_below="@id/employeeFilter"
+            android:layout_below="@id/areaFilter"
             android:layout_marginTop="28dp"
             />
 
@@ -107,7 +104,6 @@
             style="@style/Widget.SearchFilters"
             android:layout_marginStart="@dimen/flex_margin_horizontal"
             android:layout_toEndOf="@id/EmpIdFilter"
-            android:layout_below="@id/employeeFilter"
             android:layout_marginTop="28dp"
             android:text="@string/search_filters"
             />
@@ -116,8 +112,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ordersRv"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filterRellayout"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:clipToPadding="false"
@@ -126,8 +125,12 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/noResultsTv"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:paddingTop="10dp"
         style="@style/TextAppearance.NoResults"
         android:gravity="center"
@@ -135,4 +138,17 @@
         android:visibility="gone"
         />
 
-</LinearLayout>
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader_layout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

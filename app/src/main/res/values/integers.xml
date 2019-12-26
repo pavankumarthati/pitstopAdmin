@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="span_count">2</integer>
+    <integer name="package_span_count">4</integer>
+    <item name="mobile_text_rel_size" type="integer" format="float">1.2</item>
+</resources>
